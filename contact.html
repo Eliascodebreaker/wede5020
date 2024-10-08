@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - MUNCHIES PALACE</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background: #1c1c1e url('images/galaxy-background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            color: #f39c12;
+            text-shadow: 0 0 10px #f39c12;
+        }
+
+        main {
+            padding: 30px;
+        }
+
+        h1 {
+            color: #f39c12;
+            text-shadow: 0 0 10px #f39c12;
+            font-size: 36px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        .contact-info p {
+            margin: 10px 0;
+        }
+
+        .contact-form {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            color: #fff;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #f39c12;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #e67e22;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer .social-icons a {
+            margin: 0 10px;
+        }
+
+        footer .social-icons img {
+            width: 40px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        footer .social-icons img:hover {
+            transform: scale(1.2);
+        }
+
+        footer p {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact MUNCHIES PALACE</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="hampers.html">Our Hampers</a></li>
+                <li><a href="reviews.html">Customer Reviews</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Get in Touch</h2>
+        <div class="contact-info">
+            <p><strong>Email:</strong> contact@munchiespalace.com</p>
+            <p><strong>Phone:</strong> +27 63-494-6369</p>
+            <p><strong>Address:</strong> 111 Breakfast Lane, Foodtown</p>
+        </div>
+        
+        <div class="contact-form">
+            <h3>Leave a Message</h3>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 MUNCHIES PALACE. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+        </div>
+    </footer>
+</body>
+</html>
