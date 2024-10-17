@@ -1,35 +1,53 @@
-/* Basic Reset */
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background: #1c1c1e url('images/galaxy-background.jpg') no-repeat center center fixed;
-    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1e;
     color: #fff;
-    text-align: center;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
+/* Header Styles */
 header {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 150px;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
 }
 
 nav ul {
     list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
-    display: inline-block;
-    margin-right: 15px;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: #fff;
+    color: #f39c12;
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s ease;
@@ -37,69 +55,154 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
-    color: #f39c12;
-    text-shadow: 0 0 10px #f39c12;
+    color: #ffb400;
+    text-shadow: 0 0 10px #ffb400;
 }
 
-main {
+/* Hero Section with Background Image */
+.hero {
+    background-image: url('images/breakfast-hero.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for text */
     padding: 30px;
-}
-
-/* Hampers Grid Layout */
-.hampers-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Controls image and column size */
-    gap: 20px;
-    padding: 20px;
-}
-
-/* Hampers Item Styles */
-.hamper-item {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 15px;
     border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    margin: 0;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.hero p {
+    font-size: 1.6em;
+    margin: 20px 0;
+}
+
+.cta-button {
+    background-color: #f39c12;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e67e22;
+    transform: scale(1.05);
+}
+
+/* Hampers Section */
+.hampers {
+    padding: 40px 20px;
+    background-color: #1c1c1e;
     text-align: center;
 }
 
-/* Adjust image size for hampers */
-.hamper-item img {
-    width: 100px; /* Reduce image size */
-    height: auto; /* Keep image proportions */
+.hampers h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.hampers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.hamper-item {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
     border-radius: 10px;
-    margin-bottom: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.hamper-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
 
 .hamper-item p {
-    font-size: 1rem;
+    font-size: 1.2em;
     font-weight: bold;
+    color: #f39c12;
 }
 
-/* Image hover effect */
-img:hover {
-    transform: scale(1.1);
+/* Hover Effect for Hampers */
+.hamper-item:hover {
+    transform: scale(1.05);
 }
 
-/* Footer Styles */
+/* Footer */
 footer {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #333;
+    color: white;
     padding: 20px;
     text-align: center;
+    position: relative;
 }
 
-footer .social-icons a {
-    margin: 0 10px;
+footer:hover {
+    background-color: #444;
 }
 
-footer .social-icons img {
-    width: 40px;
-    transition: transform 0.3s ease-in-out;
-}
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
 
-footer .social-icons img:hover {
-    transform: scale(1.2);
-}
+    .logo img {
+        width: 120px;
+    }
 
-footer p {
-    margin-top: 10px;
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero {
+        height: 60vh;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+    }
+
+    .cta-button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+
+    .hampers-grid {
+        grid-template-columns: 1fr 1fr;
+    }
 }
