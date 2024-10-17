@@ -1,18 +1,19 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MUNCHIES PALACE - Breakfast Hampers</title>
+    <title>MUNCHIES PALACE</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to MUNCHIES PALACE</h1>
+        <div class="logo">
+            <img src="images/mp1.jpg" alt="MUNCHIES PALACE Logo">
+        </div>
         <nav>
             <ul>
-                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="hampers.html">Our Hampers</a></li>
                 <li><a href="reviews.html">Customer Reviews</a></li>
@@ -20,14 +21,35 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <h2>Delicious Breakfast Hampers Delivered to Your Door</h2>
-        <p>Explore our range of fresh and tasty breakfast hampers, perfect for any occasion.</p>
-        <!-- Large welcome image space -->
-        <div class="welcome-image">
-            <img src="images/mp1.jpg" alt="Welcome to MUNCHIES PALACE">
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Start Your Day Right at MUNCHIES PALACE</h1>
+            <p>Discover our gourmet breakfast hampers designed for every taste.</p>
+            <a href="hampers.html" class="cta-button">Explore Hampers</a>
         </div>
-    </main>
+    </section>
+
+    <section class="hampers">
+        <div class="container">
+            <h2>Our Hampers</h2>
+            <div class="hampers-grid">
+                <div class="hamper-item">
+                    <img src="images/hamper1.jpg" alt="Hamper 1">
+                    <p>Gourmet Breakfast Hamper</p>
+                </div>
+                <div class="hamper-item">
+                    <img src="images/hamper2.jpg" alt="Hamper 2">
+                    <p>Healthy Start Hamper</p>
+                </div>
+                <div class="hamper-item">
+                    <img src="images/hamper3.jpg" alt="Hamper 3">
+                    <p>Luxury Brunch Hamper</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <p>&copy; 2024 MUNCHIES PALACE. All rights reserved.</p>
     </footer>
