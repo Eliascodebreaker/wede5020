@@ -1,138 +1,146 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read genuine testimonials from satisfied MUNCHIES PALACE customers. Share your own experience with us!">
+    <meta name="keywords" content="Customer Reviews, MUNCHIES PALACE, testimonials, feedback, breakfast hampers">
     <title>Customer Reviews - MUNCHIES PALACE</title>
     <link rel="stylesheet" href="style.css">
     <style>
         /* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    background: #1c1c1e url('images/galaxy-background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: #fff;
-    text-align: center;
-}
+        body {
+            font-family: Arial, sans-serif;
+            background: #1c1c1e url('images/galaxy-background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+        }
 
-header {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-}
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+        }
 
-nav ul {
-    list-style: none;
-}
+        nav ul {
+            list-style: none;
+        }
 
-nav ul li {
-    display: inline-block;
-    margin-right: 15px;
-}
+        nav ul li {
+            display: inline-block;
+            margin-right: 15px;
+        }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s ease;
-}
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
 
-nav ul li a:hover,
-nav ul li a.active {
-    color: #f39c12;
-    text-shadow: 0 0 10px #f39c12;
-}
+        nav ul li a:hover,
+        nav ul li a.active {
+            color: #f39c12;
+            text-shadow: 0 0 10px #f39c12;
+        }
 
-/* Main Styles */
-main {
-    padding: 30px;
-}
+        /* Main Styles */
+        main {
+            padding: 30px;
+        }
 
-/* Review Section */
-.review-box {
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 30px;
-    border-radius: 10px;
-    margin: 30px auto;
-    max-width: 500px;
-    box-shadow: 0 0 15px rgba(243, 156, 18, 0.7);
-    transition: transform 0.3s ease;
-}
+        /* Review Section */
+        .review-box {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px auto;
+            max-width: 500px;
+            box-shadow: 0 0 15px rgba(243, 156, 18, 0.7);
+            transition: transform 0.3s ease;
+        }
 
-.review-box:hover {
-    transform: scale(1.05);
-}
+        .review-box:hover {
+            transform: scale(1.05);
+        }
 
-.review-box h3 {
-    color: #f39c12;
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-}
+        .review-box h3 {
+            color: #f39c12;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
 
-.review-box form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+        .review-box form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-.review-box input,
-.review-box textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #f39c12;
-    background-color: #2c2c2e;
-    color: #fff;
-    transition: border-color 0.3s ease;
-}
+        .review-box label {
+            width: 100%;
+            text-align: left;
+            margin-bottom: 5px;
+            font-size: 1rem;
+            color: #f39c12;
+        }
 
-.review-box input:focus,
-.review-box textarea:focus {
-    border-color: #e67e22;
-    outline: none;
-}
+        .review-box input,
+        .review-box textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #f39c12;
+            background-color: #2c2c2e;
+            color: #fff;
+            transition: border-color 0.3s ease;
+        }
 
-.review-box button {
-    padding: 10px 20px;
-    background-color: #f39c12;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
+        .review-box input:focus,
+        .review-box textarea:focus {
+            border-color: #e67e22;
+            outline: none;
+        }
 
-.review-box button:hover {
-    background-color: #e67e22;
-    transform: scale(1.05);
-}
+        .review-box button {
+            padding: 10px 20px;
+            background-color: #f39c12;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
 
-/* Footer Styles */
-footer {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    text-align: center;
-}
+        .review-box button:hover {
+            background-color: #e67e22;
+            transform: scale(1.05);
+        }
 
-footer .social-icons a {
-    margin: 0 10px;
-}
+        /* Footer Styles */
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            text-align: center;
+        }
 
-footer .social-icons img {
-    width: 40px;
-    transition: transform 0.3s ease-in-out;
-}
+        footer .social-icons a {
+            margin: 0 10px;
+        }
 
-footer .social-icons img:hover {
-    transform: scale(1.2);
-}
+        footer .social-icons img {
+            width: 40px;
+            transition: transform 0.3s ease-in-out;
+        }
 
-footer p {
-    margin-top: 10px;
-}
+        footer .social-icons img:hover {
+            transform: scale(1.2);
+        }
 
+        footer p {
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
@@ -156,8 +164,12 @@ footer p {
         <div class="review-box">
             <h3>Submit Your Review</h3>
             <form>
-                <input type="text" id="name" placeholder="Your Name" required>
-                <textarea id="review" placeholder="Your Review" required></textarea>
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="Your Name" required aria-required="true">
+                
+                <label for="review">Your Review</label>
+                <textarea id="review" placeholder="Your Review" required aria-required="true"></textarea>
+                
                 <button type="submit">Submit</button>
             </form>
         </div>
@@ -165,9 +177,9 @@ footer p {
     <footer>
         <p>&copy; 2024 MUNCHIES PALACE. All rights reserved.</p>
         <div class="social-icons">
-            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="images/facebook.png" alt="Visit us on Facebook"></a>
+            <a href="#"><img src="images/instagram.png" alt="Visit us on Instagram"></a>
+            <a href="#"><img src="images/twitter.png" alt="Visit us on Twitter"></a>
         </div>
     </footer>
 
