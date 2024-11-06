@@ -3,8 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MUNCHIES PALACE</title>
+    <meta name="description" content="Explore gourmet breakfast hampers at MUNCHIES PALACE for every taste. Start your day deliciously!">
+    <meta name="keywords" content="Munchies Palace, breakfast hampers, gourmet, healthy breakfast, brunch hampers">
+    <title>MUNCHIES PALACE | Gourmet Breakfast Hampers</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Reset and Page Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1c1c1e;
+            color: #fff;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #f39c12;
+            text-shadow: 0 0 10px #f39c12;
+        }
+
+        .hero {
+            background: url("images/hero-background.jpg") no-repeat center center/cover;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero-content h1 {
+            font-size: 2.5rem;
+            color: #f39c12;
+        }
+
+        .hero-content p {
+            margin: 15px 0;
+            font-size: 1.2rem;
+        }
+
+        .cta-button {
+            padding: 10px 20px;
+            background-color: #f39c12;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #e67e22;
+        }
+
+        .hampers {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .hampers h2 {
+            font-size: 2rem;
+            color: #f39c12;
+            margin-bottom: 20px;
+        }
+
+        .hampers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .hamper-item {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .hamper-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .hamper-item:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            text-align: center;
+            color: #f39c12;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .hero-content p {
+                font-size: 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -13,7 +150,7 @@
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="hampers.html">Our Hampers</a></li>
                 <li><a href="reviews.html">Customer Reviews</a></li>
@@ -35,15 +172,15 @@
             <h2>Our Hampers</h2>
             <div class="hampers-grid">
                 <div class="hamper-item">
-                    <img src="images/hamper1.jpg" alt="Hamper 1">
+                    <img src="images/hamper1.jpg" alt="Gourmet Breakfast Hamper">
                     <p>Gourmet Breakfast Hamper</p>
                 </div>
                 <div class="hamper-item">
-                    <img src="images/hamper2.jpg" alt="Hamper 2">
+                    <img src="images/hamper2.jpg" alt="Healthy Start Hamper">
                     <p>Healthy Start Hamper</p>
                 </div>
                 <div class="hamper-item">
-                    <img src="images/hamper3.jpg" alt="Hamper 3">
+                    <img src="images/hamper3.jpg" alt="Luxury Brunch Hamper">
                     <p>Luxury Brunch Hamper</p>
                 </div>
             </div>
