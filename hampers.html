@@ -1,11 +1,116 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover a variety of delicious breakfast hampers at MUNCHIES PALACE. From vegan to luxury, there's something for everyone.">
+    <meta name="keywords" content="breakfast hampers, gourmet hampers, vegan hampers, MUNCHIES PALACE, snack hampers">
     <title>Our Hampers - MUNCHIES PALACE</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Page Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1c1c1e;
+            color: #fff;
+            text-align: center;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            color: #f39c12;
+            text-shadow: 0 0 10px #f39c12;
+        }
+
+        h1, h2 {
+            color: #f39c12;
+            text-shadow: 0 0 10px #f39c12;
+        }
+
+        .hampers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .hamper-item {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .hamper-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .hamper-item p {
+            margin-top: 10px;
+            font-size: 1.1rem;
+            color: #fff;
+        }
+
+        .hamper-item:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+        }
+
+        footer .logo-space img {
+            width: 50px;
+            height: auto;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        footer p {
+            color: #f39c12;
+            margin-top: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -25,59 +130,59 @@
         
         <div class="hampers-grid">
             <div class="hamper-item">
-                <img src="images/lol1.jpg" alt="Hamper 1">
+                <img src="images/lol1.jpg" alt="Classic snack Hamper">
                 <p>Classic snack Hamper - R300</p>
             </div>
             <div class="hamper-item">
-                <img src="images/lol2.jpg" alt="Hamper 2">
+                <img src="images/lol2.jpg" alt="Deluxe Expensive Snack Hamper">
                 <p>Deluxe Expensive Snack Hamper - R400</p>
             </div>
             <div class="hamper-item">
-                <img src="images/lol3.jpg" alt="Hamper 3">
+                <img src="images/lol3.jpg" alt="Zicky Start Hamper">
                 <p>Zicky Start Hamper - R330</p>
             </div>
             <div class="hamper-item">
-                <img src="images/lol4.jpg" alt="Hamper 4">
+                <img src="images/lol4.jpg" alt="Vegan Sunrise Hamper">
                 <p>Vegan Sunrise Hamper - R228</p>
             </div>
             <div class="hamper-item">
-                <img src="images/lol5.jpg" alt="Hamper 5">
+                <img src="images/lol5.jpg" alt="Sweet Tooth Hamper">
                 <p>Sweet Tooth Hamper - R132</p>
             </div>
             <div class="hamper-item">
-                <img src="images/lol6.jpg" alt="Hamper 6">
+                <img src="images/lol6.jpg" alt="Protein Power Hamper">
                 <p>Protein Power Hamper - R440</p>
             </div>
             <div class="hamper-item">
-                <img src="images/lol7.jpg" alt="Hamper 7">
+                <img src="images/lol7.jpg" alt="Family Feast Hamper">
                 <p>Family Feast Hamper - R200</p>
             </div>
             <div class="hamper-item">
-                <img src="images/lol8.jpg" alt="Hamper 8">
+                <img src="images/lol8.jpg" alt="Kids Delight Hamper">
                 <p>Kids Delight Hamper - R220</p>
             </div>
             <div class="hamper-item">
-                <img src="images/lol9.jpg" alt="Hamper 9">
+                <img src="images/lol9.jpg" alt="Brunch Lover Hamper">
                 <p>Brunch Lover Hamper - R245</p>
             </div>
             <div class="hamper-item">
-                <img src="images/lol10.jpg" alt="Hamper 10">
+                <img src="images/lol10.jpg" alt="Luxury Indulgence Hamper">
                 <p>Luxury Indulgence Hamper - R60</p>
             </div>
             <div class="hamper-item">
-                <img src="images/lol11.jpg" alt="Hamper 11">
+                <img src="images/lol11.jpg" alt="Gluten-Free Hamper">
                 <p>Gluten-Free Hamper - R333</p>
             </div>
             <div class="hamper-item">
-                <img src="images/lol12.jpg" alt="Hamper 12">
+                <img src="images/lol12.jpg" alt="Organic Morning Hamper">
                 <p>Organic Morning Hamper - R338</p>
             </div>
             <div class="hamper-item">
-                <img src="images/lol13.jpg" alt="Hamper 13">
+                <img src="images/lol13.jpg" alt="Fruit Fiesta Hamper">
                 <p>Fruit Fiesta Hamper - R227</p>
             </div>
             <div class="hamper-item">
-                <img src="images/lol14.jpg" alt="Hamper 14">
+                <img src="images/lol14.jpg" alt="Seasonal Surprise Hamper">
                 <p>Seasonal Surprise Hamper - R255</p>
             </div>
         </div>
