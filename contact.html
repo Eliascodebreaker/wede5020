@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact MUNCHIES PALACE - Get in touch with us for inquiries, feedback, or assistance with our gourmet breakfast hampers.">
+    <meta name="keywords" content="MUNCHIES PALACE, contact, gourmet breakfast, inquiries, support">
     <title>Contact Us - MUNCHIES PALACE</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         /* Basic Reset */
         * {
@@ -28,6 +31,7 @@
 
         nav ul {
             list-style: none;
+            padding: 0;
         }
 
         nav ul li {
@@ -55,11 +59,12 @@
         h1 {
             color: #f39c12;
             text-shadow: 0 0 10px #f39c12;
-            font-size: 36px;
+            font-size: 2.5rem;
         }
 
         h2 {
             margin-bottom: 20px;
+            font-size: 1.8rem;
         }
 
         .contact-info {
@@ -68,7 +73,7 @@
             border-radius: 10px;
             margin-bottom: 20px;
             color: #fff;
-            font-size: 18px;
+            font-size: 1.1rem;
         }
 
         .contact-info p {
@@ -84,14 +89,23 @@
             margin: 0 auto;
         }
 
+        .contact-form label {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            color: #f39c12;
+            font-weight: bold;
+        }
+
         .contact-form input,
         .contact-form textarea {
             width: 100%;
             padding: 10px;
-            margin: 10px 0;
+            margin-bottom: 15px;
             border-radius: 5px;
             border: none;
             background: rgba(255, 255, 255, 0.9);
+            font-size: 1rem;
         }
 
         .contact-form button {
@@ -131,8 +145,32 @@
 
         footer p {
             margin-top: 10px;
+            color: #f39c12;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
         }
     </style>
+    <script>
+        function validateForm() {
+            const name = document.forms["contactForm"]["name"].value;
+            const email = document.forms["contactForm"]["email"].value;
+            const message = document.forms["contactForm"]["message"].value;
+            if (name === "" || email === "" || message === "") {
+                alert("All fields must be filled out");
+                return false;
+            }
+            return true;
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -157,10 +195,16 @@
         
         <div class="contact-form">
             <h3>Leave a Message</h3>
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
+            <form name="contactForm" onsubmit="return validateForm()">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+
                 <button type="submit">Send Message</button>
             </form>
         </div>
@@ -168,9 +212,9 @@
     <footer>
         <p>&copy; 2024 MUNCHIES PALACE. All rights reserved.</p>
         <div class="social-icons">
-            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="#" aria-label="Facebook"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="#" aria-label="Instagram"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="#" aria-label="Twitter"><img src="images/twitter.png" alt="Twitter"></a>
         </div>
     </footer>
 </body>
